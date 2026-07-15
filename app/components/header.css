@@ -6,7 +6,7 @@ header {
   z-index: 1000;
   background: #fbf6ee;
   border-bottom: 1px solid #e8ddd2;
-  padding: 18px 40px;
+  padding: 16px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,13 +17,12 @@ header {
   display: flex;
   flex-direction: column;
   line-height: 1;
-  flex-shrink: 0;
 }
 
 .menu {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 28px;
   flex: 1;
   margin: 0 40px;
@@ -35,13 +34,17 @@ header {
 .menu a {
   text-decoration: none;
   color: #5a433b;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #cda45b;
 }
 
 .icones {
   display: flex;
   align-items: center;
-  gap: 16px;
-  flex-shrink: 0;
+  gap: 18px;
 }
 
 .carrinho {
@@ -58,45 +61,42 @@ header {
   height: 16px;
   border-radius: 50%;
   background: #cda45b;
-  color: #fff;
+  color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   font-size: 10px;
   font-weight: bold;
 }
 
-/* ===== RESPONSIVO ===== */
+/* ---------- CELULAR ---------- */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+
   header {
-    flex-direction: column;
-    gap: 18px;
-    padding: 20px;
+    padding: 14px 18px;
   }
 
   .menu {
-    flex-wrap: wrap;
-    margin: 0;
-    gap: 15px;
-    justify-content: center;
-    font-size: 14px;
-  }
-
-  .icones {
-    justify-content: center;
+    display: none;
   }
 
   .logo h1 {
-    font-size: 34px !important;
+    font-size: 28px !important;
   }
 
   .logo span:nth-child(2) {
-    font-size: 16px !important;
-    letter-spacing: 6px !important;
+    font-size: 13px !important;
+    letter-spacing: 5px !important;
   }
 
   .logo span:nth-child(3) {
-    font-size: 10px !important;
+    font-size: 8px !important;
+    letter-spacing: 2px !important;
+  }
+
+  .icones svg {
+    width: 20px;
+    height: 20px;
   }
 }
