@@ -73,7 +73,7 @@ const irParaColecao = () => {
                 margin: "25px 0 0",
                 color: "#8A6558",
                 fontFamily: "Cormorant Garamond, serif",
-                fontSize: "62px",
+                fontSize:"62px",
                 fontWeight: 400,
               }}
             >
@@ -106,15 +106,15 @@ const irParaColecao = () => {
             </h2>
 
             <p
-  style={{
-    margin: "40px auto",
-    maxWidth: "650px",
-    color: "#6F5A52",
-    fontSize: "20px",
-    lineHeight: 1.9,
-    fontFamily: "Montserrat, sans-serif",
-  }}
->
+               style={{
+                margin: "40px auto",
+                maxWidth: "650px",
+                color: "#6F5A52",
+                fontSize: "18px",
+                lineHeight: 1.9,
+                fontFamily: "Montserrat, sans-serif",
+              }}
+            >
   Aqui você encontra peças que expressam <strong>fé</strong>,{" "}
   <strong>propósito</strong> e transformam o seu vestir em uma forma de{" "}
   <strong>adoração</strong>.
@@ -132,7 +132,7 @@ const irParaColecao = () => {
     borderRadius: "10px",
     fontFamily: "Montserrat, sans-serif",
     fontWeight: 600,
-    fontSize: "16px",
+    fontSize: "18px",
     cursor: "pointer",
   }}
 >
@@ -145,7 +145,7 @@ const irParaColecao = () => {
         <section
           id="colecao"
           style={{
-            padding: "110px 20px",
+            padding: module ? "90px 20px" : "60px 20px",
             background: "#FFFFFF",
           }}
         >
@@ -163,7 +163,7 @@ const irParaColecao = () => {
                 fontFamily: "Montserrat, sans-serif",
                 letterSpacing: "3px",
                 textTransform: "uppercase",
-                fontSize: "14px",
+                fontSize:"14px",
                 fontWeight: 600,
               }}
             >
@@ -177,7 +177,7 @@ const irParaColecao = () => {
                 marginBottom: "20px",
                 color: "#8A6558",
                 fontFamily: "Cormorant Garamond, serif",
-                fontSize: "58px",
+                fontSize:"58px",
                 fontWeight: 500,
               }}
             >
